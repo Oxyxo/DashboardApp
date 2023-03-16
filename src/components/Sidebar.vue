@@ -1,5 +1,5 @@
 <template>
-    <aside class="sidebar">
+    <aside class="sidebar" :style="{ backgroundColor: sidebarColor }">
         <h3>Data Sources</h3>
         <ul>
             <li><a href="#">Maria DB</a></li>
@@ -9,15 +9,25 @@
         </ul>
     </aside>
     <div class="bottom">
-        <button class=".faq-btn">FAQ</button>
-        <button class="sidebar-button">Change Color</button>
+        <button class="faq-button">FAQ</button>
+        <button class="change-color-button" @click="changeSidebarColor">Change Color</button>
 
     </div>
 </template>
 
 <script>
 export default {
-    name: 'DataSourcesSidebar'
+    name: 'DataSourcesSidebar',
+    data() {
+        return {
+            sidebarColor: "green",
+        };
+    },
+    methods: {
+        changeSidebarColor() {
+            this.sidebarColor = this.sidebarColor === "green" ? "blue" : "green";
+        },
+    },
 }
 </script>
 
@@ -41,7 +51,7 @@ export default {
     padding-left: 1rem;
 }
 
-.faq-btn {
+.faq-button {
     margin-bottom: 1rem;
     background-color: #007bff;
     color: white;
@@ -49,10 +59,10 @@ export default {
     border-radius: 3px;
     padding: 0.5rem 1rem;
     cursor: pointer;
-}
-
-.sidebar-button {
-    margin-right: 0.5rem;
+    font-size: 14px;
+    margin-right: 1rem;
+    /* Add some spacing between buttons */
+    text-transform: uppercase;
 }
 </style>
 
