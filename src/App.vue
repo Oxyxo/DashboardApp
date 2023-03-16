@@ -12,7 +12,7 @@
     </nav>
     <div class="main-container">
       <DataSourcesSidebar />
-      <div class="right-container">
+      <div class="content">
         <router-view />
       </div>
     </div>
