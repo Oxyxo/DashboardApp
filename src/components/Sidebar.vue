@@ -22,6 +22,7 @@ export default {
     padding: 1rem;
     color: white;
     height: 100%;
+    flex-grow: 1;
 }
 
 .sidebar h3 {

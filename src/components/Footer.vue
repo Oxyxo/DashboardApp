@@ -77,4 +77,5 @@ footer {
         text-decoration: none;
         color: #007bff;
     }
+}
 </style>
