@@ -25,7 +25,7 @@ export default {
     },
     methods: {
         changeSidebarColor() {
-            this.sidebarColor = this.sidebarColor === "green" ? "blue" : "green";
+            this.sidebarColor = this.sidebarColor === "#B19CD9" ? "CCCCCC" : "#B19CD9";
         },
     },
 }
@@ -63,9 +63,9 @@ export default {
     /* Add padding to control the size of the buttons */
     cursor: pointer;
     font-size: 14px;
-    margin-right: 1rem;
+    margin-right: 0.5rem;
     /* Add some spacing between buttons */
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     border: 1px solid #ffffff;
     /* Add a border */
     border-radius: 4px;
