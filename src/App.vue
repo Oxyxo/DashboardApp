@@ -1,21 +1,23 @@
 <template>
   <div id="app">
-    <nav>
-      <ul class="nav-list">
-        <li>
-          <router-link class="nav-link" to="/" exact>Home</router-link>
-        </li>
-        <li>
-          <router-link class="nav-link" to="/settings">Settings</router-link>
-        </li>
-      </ul>
-    </nav>
-    <div class="main-container">
+    <header>
+      <nav>
+        <ul class="nav-list">
+          <li>
+            <router-link class="nav-link" to="/" exact>Home</router-link>
+          </li>
+          <li>
+            <router-link class="nav-link" to="/settings">Settings</router-link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
       <DataSourcesSidebar />
       <div class="content">
         <router-view />
       </div>
-    </div>
+    </main>
     <FooterComponent />
   </div>
 </template>
@@ -41,11 +43,18 @@ export default {
   padding: 0;
 }
 
-nav {
-  background-color: #f8f9fa;
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #007bff;
   padding: 1rem;
-  z-index: 1;
-  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
 }
 
 .nav-list {
@@ -58,35 +67,24 @@ nav {
   display: inline-block;
   padding: 0.5rem 1rem;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   margin-right: 1rem;
 }
 
 .router-link-active {
   font-weight: bold;
-  color: #007bff;
+  color: #fff;
 }
 
-#app {
+main {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main-container {
-  display: flex;
-  flex-grow: 1;
-}
-
-.right-container {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  width: 100%;
+  min-height: calc(100vh - 154px);
+  position: relative;
 }
 
 .content {
   padding: 1rem;
   flex-grow: 1;
+  background-color: #fff;
 }
 </style>

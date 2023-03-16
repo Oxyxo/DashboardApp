@@ -8,6 +8,9 @@
             <li><a href="#">JSON</a></li>
         </ul>
     </aside>
+    <div class="bottom">
+        <button class="faq-btn">FAQ</button>
+    </div>
 </template>
 
 <script>
@@ -18,24 +21,32 @@ export default {
 
 <style scoped>
 .sidebar {
-    background-color: #28a745;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* width: 240px;
+    height: 100%; */
+    background-color: #f8f9fa;
     padding: 1rem;
-    color: white;
-    height: 100%;
-    flex-grow: 1;
 }
 
-.sidebar h3 {
+.bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.faq-btn {
     margin-bottom: 1rem;
-}
-
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar ul li a {
+    background-color: #007bff;
     color: white;
-    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 </style>
+
+
