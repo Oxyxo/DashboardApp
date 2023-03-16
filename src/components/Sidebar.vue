@@ -9,7 +9,9 @@
         </ul>
     </aside>
     <div class="bottom">
-        <button class="faq-btn">FAQ</button>
+        <button class=".faq-btn">FAQ</button>
+        <button class="sidebar-button">Change Color</button>
+
     </div>
 </template>
 
@@ -35,7 +37,8 @@ export default {
     bottom: 0;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 1rem;
 }
 
 .faq-btn {
@@ -46,6 +49,10 @@ export default {
     border-radius: 3px;
     padding: 0.5rem 1rem;
     cursor: pointer;
+}
+
+.sidebar-button {
+    margin-right: 0.5rem;
 }
 </style>
 
