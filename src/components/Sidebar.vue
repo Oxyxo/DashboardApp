@@ -51,18 +51,33 @@ export default {
     padding-left: 1rem;
 }
 
-.faq-button {
+.faq-button,
+.change-color-button {
     margin-bottom: 1rem;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 3px;
-    padding: 0.5rem 1rem;
+    /* padding: 0.5rem 1rem; */
+    padding: 6px 12px;
+    /* Add padding to control the size of the buttons */
     cursor: pointer;
     font-size: 14px;
     margin-right: 1rem;
     /* Add some spacing between buttons */
     text-transform: uppercase;
+    border: 1px solid #ffffff;
+    /* Add a border */
+    border-radius: 4px;
+    /* Add rounded corners */
+    transition: background-color 0.3s ease;
+    /* Add a smooth transition when the background color changes */
+}
+
+.faq-button:hover,
+.change-color-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Add a subtle background color change on hover */
 }
 </style>
 
