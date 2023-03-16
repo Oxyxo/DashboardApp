@@ -34,46 +34,47 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 footer {
     background-color: #f8f9fa;
-    padding: 1rem 0;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0 1rem;
-}
-
-.footer-section {
-    flex: 1;
     padding: 1rem;
-}
-
-.footer-section h4 {
-    margin-bottom: 0.5rem;
-}
-
-.footer-section ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-section ul li a {
-    text-decoration: none;
-    color: #000;
-}
-
-.footer-bottom {
     text-align: center;
-    padding: 1rem;
-    border-top: 1px solid #ccc;
-}
+    width: 100%;
 
-.footer-link {
-    text-decoration: none;
-    color: #007bff;
-}
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 0 1rem;
+    }
+
+    .footer-section {
+        flex: 1;
+        padding: 1rem;
+    }
+
+    .footer-section h4 {
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .footer-section ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        padding: 1rem;
+        border-top: 1px solid #ccc;
+    }
+
+    .footer-link {
+        text-decoration: none;
+        color: #007bff;
+    }
 </style>

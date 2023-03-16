@@ -1,21 +1,19 @@
 <template>
   <div id="app">
+    <nav>
+      <ul class="nav-list">
+        <li>
+          <router-link class="nav-link" to="/" exact>Home</router-link>
+        </li>
+        <li>
+          <router-link class="nav-link" to="/settings">Settings</router-link>
+        </li>
+      </ul>
+    </nav>
     <div class="main-container">
       <DataSourcesSidebar />
       <div class="right-container">
-        <nav>
-          <ul class="nav-list">
-            <li>
-              <router-link class="nav-link" to="/" exact>Home</router-link>
-            </li>
-            <li>
-              <router-link class="nav-link" to="/settings">Settings</router-link>
-            </li>
-          </ul>
-        </nav>
-        <div class="content">
-          <router-view />
-        </div>
+        <router-view />
       </div>
     </div>
     <FooterComponent />

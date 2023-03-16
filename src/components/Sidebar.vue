@@ -19,11 +19,9 @@ export default {
 <style scoped>
 .sidebar {
     background-color: #28a745;
-    color: white;
-    width: 250px;
     padding: 1rem;
+    color: white;
     height: 100%;
-    position: fixed;
 }
 
 .sidebar h3 {
